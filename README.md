@@ -1,8 +1,19 @@
 # WinUI 3 踩坑记
 
-WinUI 3 ([Windows App SDK](https://github.com/microsoft/WindowsAppSDK)) 于 2021 年 11 月发布了第一个正式版 v1.0.0 [<sup>[1]</sup>](#refer)，最新版本是 v1.1.4 [<sup>[2]</sup>](#refer)。我的基于 WinUI 3 的个人项目 [寻空](https://github.com/xunkong/xunkong) 从年初开始开发 [<sup>[3]</sup>](#refer)，完整经历了 WinUI 3 的各个版本，见证了从 Bug 满天飞到逐渐完善的全过程。
+WinUI 3 ([Windows App SDK](https://github.com/microsoft/WindowsAppSDK) 于 2021 年 11 月发布了第一个正式版 v1.0.0 [<sup>[1]</sup>](#refer)，最新版本是 v1.1.4 [<sup>[2]</sup>](#refer)。我的基于 WinUI 3 的个人项目 [寻空](https://github.com/xunkong/xunkong) 从年初开始开发 [<sup>[3]</sup>](#refer)，完整经历了 WinUI 3 的各个版本，见证了从 Bug 满天飞到逐渐完善的全过程。
 
 现在 WinUI 3 趋于稳定，处于可以一用的状态，我也想把开发寻空过程中的得到的经验和遇到的问题分享给大家，系列名就叫 **WinUI 3 踩坑记** 好了。个人水平有限，文章中难免会出现错误，请各位读者批评指正。
+
+## 关于本系列
+
+**WinUI 3 踩坑记** 不是完整的系列教程，只是和 WinUI 3 相关随笔的合集。本系列默认读者
+
+- 掌握 C# 11 和 XAML 的语法，.NET 6 Runtime API
+- 熟悉 WinUI 控件和 WinRT API
+- 了解 Win32 窗口相关知识
+
+系列的所有文章和代码都存档于 [GitHub@Scighost/WinUI3Keng](https://github.com/Scighost/WinUI3Keng) 。
+
 
 ## WinUI 3 是什么
 
@@ -27,15 +38,13 @@ WinUI 3 是 Windows App SDK 内的**本机 UI 平台组件**，那这个 Windows
 - **开发体验差。** 到现在还没有设计器，只能对着一个 XAML 文件空写，为此我已经练就了一套脑内渲染本领。其次是编译速度慢，真的非常慢。
 - **安装包体积大。** 发布 WinUI 3 项目必须包含 .NET 运行时，并且暂时还不支持剪裁，一个禁用 ReadyToRun 编译的 WinUI 3 空项目安装包就有 40.6 MB，启用 ReadyToRun 后更是膨胀到 51.5 MB。(Windows App SDK v1.1.4 x64)
 - **互操作性能差。** .NET 6 的性能确实毋庸置疑，**但是** WinUI 是一个 Native 框架，对控件依赖属性的读写需要通过 CsWinRT 互操作，经过测试要比 WPF 要慢很多 [<sup>[5]</sup>](#refer)。
+- **生态差。** WinUI 3 正式发布不到一年，第三方控件还很少，大部分情况下需要自己写控件。
 
 > 安装包体积大和互操作性能差仅对于 C# 而言，C++ 开发的 WinUI 3 应用没有这些问题。
 
 ## 总结
 
-总的来说，WinUI 3 是一个优秀的框架，既有颜值也有体验（当然不是指开发体验）。我所知的使用了 WinUI 3 框架开发的商业应用只有 [爱奇艺 Preview](https://www.microsoft.com/store/apps/9NBLGGH4NBXB)，其他的都是一些工具类型的应用。
-
-那 WinUI 3 有未来吗，可能每一个开发者都会有这样的疑惑，毕竟微软在 UI 框架领域的名声不佳，Windows 应用的市场份额也在持续萎缩。所以，WinUI 3 需要有明确清晰的定位，高性能的生产力应用它无法胜任，简单的小软件用 Web 更合适，而在此中间对性能和体验都有一定需求的应用就是我认为 WinUI 3 能大展拳脚的地方。
-
+总的来说，WinUI 3 是一个未来可期的框架，既有颜值也有体验（当然不是指开发体验）。但是 WinUI 3 本身很难开发高性能的生产力软件，这注定了它不太可能在大型商业软件领域有所作为。而在更广阔的娱乐或工具应用中，WinUI 3 可能会成为一部分新项目的选择，比如 [爱奇艺 Preview](https://www.microsoft.com/store/apps/9NBLGGH4NBXB) 。WinUI 3 的未来到底如何，我们拭目以待。
 
 ## 参考
 
