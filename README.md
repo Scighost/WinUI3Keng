@@ -2,7 +2,7 @@
 
 WinUI 3 ([Windows App SDK](https://github.com/microsoft/WindowsAppSDK) 于 2021 年 11 月发布了第一个正式版 v1.0.0 [<sup>[1]</sup>](#参考)，最新版本是 v1.1.4 [<sup>[2]</sup>](#参考)。我的基于 WinUI 3 的个人项目 [寻空](https://github.com/xunkong/xunkong) 从年初开始开发 [<sup>[3]</sup>](#参考)，完整经历了 WinUI 3 的各个版本，见证了从 Bug 满天飞到逐渐完善的全过程。
 
-现在 WinUI 3 趋于稳定，处于可以一用的状态，我也想把开发寻空过程中的值得记录的东西分享给大家，系列名就叫 **WinUI 3 踩坑记** 好了。个人水平有限，文章中难免会出现错误，请各位读者批评指正。
+现在 WinUI 3 趋于稳定，处于可以一用的状态，我也想把开发寻空过程中遇到的有趣的内容分享给大家，系列名就叫 **WinUI 3 踩坑记** 好了。个人水平有限，文章中难免会出现错误，请各位读者批评指正。
 
 ## WinUI 3 是什么
 
@@ -41,7 +41,7 @@ WinUI 3 是 Windows App SDK 内的**本机 UI 平台组件**，那这个 Windows
     - .NET 6 Runtime API
     - WinUI 控件和 WinRT API
     - Win32 窗口相关知识
-- 若无特殊说明，本系列文章中代码的环境为 `Windows 11 22H2 x64`, `C# 11 (.NET 6)`, `Windows App SDK v1.1.4`
+- 若无特殊说明，本系列文章中代码依赖的环境为 `Windows 11 22H2 x64`, `C# 11 (.NET 6)`, `Windows App SDK v1.1.4`
 - 系列的所有文章和代码都存档于 [GitHub@Scighost/WinUI3Keng](https://github.com/Scighost/WinUI3Keng)
 
 ## 参考
