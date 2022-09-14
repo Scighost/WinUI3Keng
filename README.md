@@ -4,6 +4,7 @@ WinUI 3 ([Windows App SDK](https://github.com/microsoft/WindowsAppSDK) 于 2021 
 
 现在 WinUI 3 趋于稳定，处于可以一用的状态，我也想把开发寻空过程中遇到的有趣的内容分享给大家，系列名就叫 **WinUI 3 踩坑记** 好了。个人水平有限，文章中难免会出现错误，请各位读者批评指正。
 
+
 ## WinUI 3 是什么
 
 WinUI 3 是 Windows App SDK 内的**本机 UI 平台组件**，那这个 Windows App SDK 又是什么东西，和 Windows SDK 有什么关系，是不是改名部的新操作？
@@ -11,6 +12,7 @@ WinUI 3 是 Windows App SDK 内的**本机 UI 平台组件**，那这个 Windows
 按照微软的文档所说，Windows App SDK 是一组新的开发人员组件和工具，它们代表着 Windows 应用开发平台的下一步发展方向，Windows App SDK 不会代替 Windows SDK 或现有桌面 Windows 应用类型（比如 WinForm、WPF、Win32），而是使用一组通用 API 来补充这些现有工具和应用类型，开发人员可以在这些平台上依赖这些 API 来执行操作 [<sup>[4]</sup>](#参考)。
 
 ~~微软的文档真不讲人话，~~ 简单来说，WinUI 3 是 Windows 平台最新一代本机应用开发框架，继承了 UWP 的设计语言和 Win32 的运行方式，同时结合了两者的优点，但是也带来了只能跑在 Windows 10 1809 (17763) 及以上版本的限制。
+
 
 ## WinUI 3 的优缺点
 
@@ -33,6 +35,7 @@ WinUI 3 是 Windows App SDK 内的**本机 UI 平台组件**，那这个 Windows
 
 总的来说，WinUI 3 是一个未来可期的框架，既有颜值也有体验（当然不是指开发体验）。但是 WinUI 3 本身很难开发高性能的生产力软件，这注定了它不太可能在大型商业软件领域有所作为。而在更广阔的娱乐或工具应用中，WinUI 3 可能会成为一部分新项目的选择，比如 [爱奇艺 Preview](https://www.microsoft.com/store/apps/9NBLGGH4NBXB) 。WinUI 3 的未来到底如何，我们拭目以待。
 
+
 ## 关于本系列
 
 - **WinUI 3 踩坑记** 不是完整的系列教程，只是和 WinUI 3 相关随笔的合集
@@ -43,6 +46,27 @@ WinUI 3 是 Windows App SDK 内的**本机 UI 平台组件**，那这个 Windows
     - Win32 窗口相关知识
 - 若无特殊说明，本系列文章中代码依赖的环境为 `Windows 11 22H2 x64`, `C# 11 (.NET 6)`, `Windows App SDK v1.1.4`
 - 系列的所有文章和代码都存档于 [GitHub@Scighost/WinUI3Keng](https://github.com/Scighost/WinUI3Keng)
+
+## 开发工具
+
+除了在 Visual Studio 中必装的负载以外，推荐几个提升效率的工具。
+
+[**Microsoft UI Xaml**](https://github.com/microsoft/microsoft-ui-xaml)         
+WinUI 控件样式源码，这算是必看内容之一。开发中遇到的一些问题，比如 NavigationView 的背景色怎么修改、CheckBox 为什么这么宽、怎么去掉 ListView 选中时的效果 这些问题都可以通过修改控件样式解决。
+
+[**Windows Community Toolkit Sample App**](https://www.microsoft.com/store/productId/9NBLGGH4TLCQ)      
+[社区工具箱](https://github.com/CommunityToolkit/WindowsCommunityToolkit)，开发 WinUI 基本离不开这个东西。
+
+[**WinUI Gallery**](https://github.com/microsoft/WinUI-Gallery)       
+这是官方的控件展示，WinUI 的所有自带的控件都能在里面找到用法。有 [WinUI 2](https://www.microsoft.com/store/apps/9MSVH128X2ZT) 和 [WinUI 3](https://www.microsoft.com/store/apps/9P3JFPWWDZRC) 两个版本，内容差不多，我觉得 WinUI 2 版的比较好用。
+
+![image-20220914193653890](./img/image-20220914193653890.webp)
+
+[**Character Map UWP**](https://www.microsoft.com/store/apps/9WZDNCRDXF41)      
+字符映射表，一个查看和搜索字体字符的工具。开发过程中经常要查找一些字体图标，在这个应用中都能很方便地找到，还能直接复制生成的代码。
+
+![image-20220914193752122](./img/image-20220914193752122.webp)
+
 
 ## 参考
 
