@@ -1,6 +1,6 @@
 # Windows 11 新材质 Mica Alt 效果展示
 
-> 本文是 **WinUI 3 踩坑记** 的一部分，该系列发布于 [GitHub@Scighost/WinUI3Keng](https://github.com/Scighost/WinUI3Keng)
+> 本文是 **WinUI 3 踩坑记** 的一部分，该系列发布于 [GitHub@Scighost/WinUI3Keng](https://github.com/Scighost/WinUI3Keng)，若内容出现冲突以 GitHub 上的为准。
 
 微软在 2022-09-02 更新了官方文档，新增了 Windows 11 上的一个新材质 Mica Alt [<sup>[1]</sup>](#参考)，文档中说 Widows App SDK v1.1 能使用这个材质，可是 v1.1 在 2022-07-04 就发布了 [<sup>[2]</sup>](#参考)，到现在过了两个月才披露出来，可真能藏啊。我也在第一时间体验了 Mica Alt 的效果，下面直接上图片。
 
@@ -8,7 +8,7 @@
 
 ## 效果展示
 
-> 仓库内图片经过压缩有色彩断层，在 [这里](https://www.cnblogs.com/scighost/p/16694214.html) 可以看到更好的显示效果
+> 仓库内图片经过压缩有色彩断层，在 [这里](https://www.cnblogs.com/scighost/p/16698094.html) 可以看到更好的显示效果
 
 首先展示浅深色模式下的 Mica Alt 显示效果，其实这样看不出有什么明显的差异。
 
