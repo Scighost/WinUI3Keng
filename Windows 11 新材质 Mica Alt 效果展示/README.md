@@ -1,6 +1,6 @@
 # Windows 11 新材质 Mica Alt 效果展示
 
-> 本文是 **WinUI 3 踩坑记** 的一部分，该系列发表在 [GitHub@Scighost/WinUI3Keng](https://github.com/Scighost/WinUI3Keng)
+> 本文是 **WinUI 3 踩坑记** 的一部分，该系列发布于 [GitHub@Scighost/WinUI3Keng](https://github.com/Scighost/WinUI3Keng)
 
 微软在 2022-09-02 更新了官方文档，新增了 Windows 11 上的一个新材质 Mica Alt [<sup>[1]</sup>](#参考)，文档中说 Widows App SDK v1.1 能使用这个材质，可是 v1.1 在 2022-07-04 就发布了 [<sup>[2]</sup>](#参考)，到现在过了两个月才披露出来，可真能藏啊。我也在第一时间体验了 Mica Alt 的效果，下面直接上图片。
 
@@ -32,7 +32,7 @@ Windows 默认的壁纸颜色变化不明显，上面的显示效果只能看出
 
 ## 写在后面
 
-Mica 材质也能像 Acrylic 一样自定义 `FallbackColor`, `LuminosityOpacity`, `TintColor`, `TintOpacity` 等属性，这部分内容我懒得再写，就由读者自行探索了。
+Mica 材质也能像 Acrylic 一样自定义 `FallbackColor`, `LuminosityOpacity`, `TintColor`, `TintOpacity` 等属性，自定义这部分属性后不再会自动响应系统主题变更，需要自己修改背景颜色，我懒得再写，就由读者自行探索了。
 
 ## 参考
 

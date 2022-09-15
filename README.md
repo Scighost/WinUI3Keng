@@ -1,6 +1,6 @@
 # WinUI 3 踩坑记
 
-WinUI 3 ([Windows App SDK](https://github.com/microsoft/WindowsAppSDK) 于 2021 年 11 月发布了第一个正式版 v1.0.0 [<sup>[1]</sup>](#参考)，最新版本是 v1.1.4 [<sup>[2]</sup>](#参考)。我的基于 WinUI 3 的个人项目 [寻空](https://github.com/xunkong/xunkong) 从年初开始开发 [<sup>[3]</sup>](#参考)，完整经历了 WinUI 3 的各个版本，见证了从 Bug 满天飞到逐渐完善的全过程。
+WinUI 3 ([Windows App SDK](https://github.com/microsoft/WindowsAppSDK) 于 2021 年 11 月发布了第一个正式版 v1.0.0 [<sup>[1]</sup>](#参考)，最新版本是 v1.1.5 [<sup>[2]</sup>](#参考)。我的基于 WinUI 3 的个人项目 [寻空](https://github.com/xunkong/xunkong) 从年初开始开发 [<sup>[3]</sup>](#参考)，完整经历了 WinUI 3 的各个版本，见证了从 Bug 满天飞到逐渐完善的全过程。
 
 现在 WinUI 3 趋于稳定，处于可以一用的状态，我也想把开发寻空过程中遇到的有趣的内容分享给大家，系列名就叫 **WinUI 3 踩坑记** 好了。个人水平有限，文章中难免会出现错误，请各位读者批评指正。
 
@@ -44,8 +44,8 @@ WinUI 3 是 Windows App SDK 内的**本机 UI 平台组件**，那这个 Windows
     - .NET 6 Runtime API
     - WinUI 控件和 WinRT API
     - Win32 窗口相关知识
-- 若无特殊说明，本系列文章中代码依赖的环境为 `Windows 11 22H2 x64`, `C# 11 (.NET 6)`, `Windows App SDK v1.1.4`
-- 系列的所有文章和代码都存档于 [GitHub@Scighost/WinUI3Keng](https://github.com/Scighost/WinUI3Keng)
+- 若无特殊说明，本系列文章中代码的环境为 `Windows 11 22H2 (22621) x64`, `C# 11 (.NET 6)`, `Windows App SDK v1.1.5`
+- 系列的所有文章和代码都存档于 [GitHub@Scighost/WinUI3Keng](https://github.com/Scighost/WinUI3Keng)，若出现冲突以 GitHub 上的为准
 
 ## 开发工具
 
@@ -71,7 +71,7 @@ WinUI 控件样式源码，这算是必看内容之一。开发中遇到的一�
 ## 参考
 
 - [1] [Windows App SDK v1.0.0](https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.0)
-- [2] [Windows App SDK v1.1.4](https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.1.4)
+- [2] [Windows App SDK v1.1.5](https://github.com/microsoft/WindowsAppSDK/releases/tag/v1.1.5)
 - [3] [Xunkong: First commit](https://github.com/xunkong/xunkong/commit/4f377649a5004b595e99daae96d52ad9285f980a)
 - [4] [Windows App SDK Document](https://docs.microsoft.com/zh-cn/windows/apps/windows-app-sdk/)
 - [5] [Discussion: Dependency property is much slower in WinUI 3 than in WPF](https://github.com/microsoft/microsoft-ui-xaml/issues/1633)
