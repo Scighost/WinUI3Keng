@@ -1,0 +1,34 @@
+﻿<Window x:Class="WinUISample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="using:WinUISample"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d">
+
+
+    <Grid>
+
+        <NavigationView IsBackEnabled="True">
+            <NavigationView.Resources>
+                <Thickness x:Key="NavigationViewContentMargin">0,48,0,0</Thickness>
+            </NavigationView.Resources>
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="页面 1" Icon="Home" />
+                <NavigationViewItem Content="页面 2" Icon="Account" />
+                <NavigationViewItem Content="页面 3" Icon="Camera" />
+                <NavigationViewItem Content="页面 4" Icon="Comment" />
+            </NavigationView.MenuItems>
+        </NavigationView>
+
+        <Border x:Name="AppTitleBar"
+                Height="48"
+                Margin="48,0,0,0"
+                VerticalAlignment="Top">
+            <TextBlock VerticalAlignment="Center"
+                       Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                       Text="WinUI Desktop" />
+        </Border>
+    </Grid>
+
+</Window>
