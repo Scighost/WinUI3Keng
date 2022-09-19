@@ -27,15 +27,15 @@ public sealed partial class MainWindow : Window
 
     private AppWindowTitleBar titleBar;
 
-    private SystemBackdropHelper backdropHelper;
+    private SystemBackdrop backdrop;
 
     public MainWindow()
     {
         this.InitializeComponent();
 
         // 设置云母或亚克力背景
-        backdropHelper = new SystemBackdropHelper(this);
-        backdropHelper.TrySetMica(fallbackToAcrylic: true);
+        backdrop = new SystemBackdrop(this);
+        backdrop.TrySetMica(fallbackToAcrylic: true);
 
         // 窗口句柄
         hwnd = WindowNative.GetWindowHandle(this);

@@ -26,7 +26,7 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.1.5" />
 		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.1" />
-		<PackageReference Include="Scighost.WinUILib" Version="0.1.0-*" />
+		<PackageReference Include="Scighost.WinUILib" Version="0.1.0-beta3" />
 		<PackageReference Include="Vanara.PInvoke.User32" Version="3.4.8" />
 		<Manifest Include="$(ApplicationManifest)" />
 	</ItemGroup>
